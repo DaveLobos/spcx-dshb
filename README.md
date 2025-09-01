@@ -4,6 +4,10 @@
 
     git clone https://github.com/DaveLobos/spcx-dshb
 
+## Change Directory
+
+    cd spcx-dshb
+
 ## Install Dependencies
 
     npm install

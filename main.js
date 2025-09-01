@@ -110,6 +110,7 @@ updateApiData(error => {
             res.end("Not Found");
           });
           res.statusCode = 200;
+          res.setHeader("Content-Type", url.pathname.match(/\.css$/) !== null ? "text/css" : "text/javascript");
           readStream.pipe(res);
         }else{
           const readStream = fs.createReadStream("./index.html");

@@ -237,5 +237,10 @@ header {
                 background-color:hsl(180, 85%, 20%);
             }
         }
-   }
+    }
+
+    & > .worldmap {
+        width:640px;
+        margin:auto;
+    }
 }

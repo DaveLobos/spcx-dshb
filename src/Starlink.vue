@@ -1,5 +1,6 @@
 <script setup>
  import {ref, watchEffect} from "vue";
+ import Worldmap from "./Worldmap.vue";
 
  const data = ref(null);
 
@@ -26,6 +27,7 @@
   <main v-if="data === null">Loading Data...</main>
   <main id="starlink" v-else>
     <h2>Starlink - Page {{data.page}}</h2>
+    <Worldmap />
     <div class="pagin">
       <a v-for="n in data.totalPages" :href="`/starlink/${n}`" :class="n === data.page ? 'current' : ''">{{n}}</a>
     </div>
